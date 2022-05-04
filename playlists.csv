@@ -1,0 +1,1 @@
+Workout,User{idUser=1, nume='Toma01', bio='Hello, welcome to my profile!'},[Melodie{nume='A2Z', artist=Artist{nume='Logic', genMuzical='Hip-Hop', idArtist=1}, durata=180, idMelodie=3}, Melodie{nume='Celebration', artist=Artist{nume='Logic', genMuzical='Hip-Hop', idArtist=1}, durata=120, idMelodie=1}]
