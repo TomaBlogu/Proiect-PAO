@@ -1,6 +1,6 @@
 # Proiect-PAO
 
-Obiecte:" <br/>
+Obiecte: <br/>
 <ul>
 <li>	User</li> 
 <li>	Artist</li>  
