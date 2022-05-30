@@ -1,28 +1,35 @@
 package entities;
 
 import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
 
 public class Playlist {
     private String nume;
     private User user;
-    private ArrayList<Melodie> melodii = new ArrayList<Melodie>();
+    private List<Melodie> melodii = new ArrayList<>();
 
     public Playlist(String nume, User user) {
         this.nume = nume;
         this.user = user;
     }
 
+    public String getNume() {
+        return nume;
+    }
+
+
     public void adaugareMelodie(Melodie melodie){
         melodii.add(melodie);
     }
 
-    public void stergereMelodie(int index){melodii.remove(index);}
+    public void stergereMelodie(Melodie melodie){melodii.remove(melodie);}
 
     public void sortareAlfabetica(){
-        melodii.sort((object1, object2) -> object1.getNume().compareTo(object2.getNume()));
+        melodii.sort(Comparator.comparing(Melodie::getNume));
     }
 
-    public ArrayList<Melodie> getMelodii() {
+    public List<Melodie> getMelodii() {
         return melodii;
     }
 

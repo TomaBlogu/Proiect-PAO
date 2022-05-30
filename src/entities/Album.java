@@ -1,12 +1,13 @@
 package entities;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Album {
     private String nume;
     private Artist artist;
     private Integer idAlbum;
-    private ArrayList<Melodie> melodii = new ArrayList<Melodie>();
+    private List<Melodie> melodii = new ArrayList<>();
 
     public Album(String nume, Artist artist, Integer idAlbum) {
         this.nume = nume;
@@ -22,7 +23,7 @@ public class Album {
         return artist;
     }
 
-    public ArrayList<Melodie> getMelodii() {
+    public List<Melodie> getMelodii() {
         return melodii;
     }
 
