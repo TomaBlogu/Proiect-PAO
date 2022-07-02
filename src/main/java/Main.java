@@ -11,6 +11,7 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
+
         User user1 = new User("Toma01","Hello, welcome to my profile!",1);
         UserDao userDao = new UserDao(new TreeMap<>());
         EvaluareDao evaluareDao = new EvaluareDao(new TreeMap<>());
@@ -18,9 +19,9 @@ public class Main {
 
         Artist artist1 = new Artist("Logic","Hip-Hop",1);
         Album album1 = new Album("No pressure", artist1 ,1);
-        Melodie melodie1 = new Melodie("Celebration",artist1,120, 1);
-        Melodie melodie2 = new Melodie("Perfect",artist1,202, 2);
-        Melodie melodie3 = new Melodie("A2Z",artist1,180, 3);
+        Melodie melodie1 = new Melodie("Celebration",1,120, 1);
+        Melodie melodie2 = new Melodie("Perfect",1,202, 2);
+        Melodie melodie3 = new Melodie("A2Z",1,180, 3);
         Playlist playlist1 = new Playlist("Workout",user1);
         Evaluare evaluare1, evaluare2;
         evaluare1 = new EvaluareAlbum(user1,1,album1,6,8);
@@ -32,10 +33,10 @@ public class Main {
         userService.creareEvaluare(evaluare2);
         userService.adaugareMelodieAlbum(album1, melodie1);
         userService.salvareAlbum(album1,user1.getIdUser());
-        userService.salvareMelodie(melodie1,user1.getIdUser());
+        userService.salvareMelodie(melodie1,user1);
         userService.adaugareMelodiePlaylist(playlist1, melodie1);
         userService.adaugareMelodiePlaylist(playlist1, melodie3);
-        System.out.println(userService.evaluari(1));
+        System.out.println(userService.evaluari(user1));
         userService.sortareAlfabeticaPlaylist(playlist1);
         System.out.println(playlist1);
 

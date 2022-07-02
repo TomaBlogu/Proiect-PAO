@@ -11,6 +11,9 @@ public class Artist {
         this.idArtist = idArtist;
     }
 
+    public Artist() {
+    }
+
     public String getNume() {
         return nume;
     }
@@ -25,6 +28,14 @@ public class Artist {
 
     public void setNume(String nume) {
         this.nume = nume;
+    }
+
+    public void setGenMuzical(String genMuzical) {
+        this.genMuzical = genMuzical;
+    }
+
+    public void setIdArtist(Integer idArtist) {
+        this.idArtist = idArtist;
     }
 
     @Override

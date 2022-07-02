@@ -1,1 +1,1 @@
-No pressure,Artist{nume='Logic', genMuzical='Hip-Hop', idArtist=1},1,[Melodie{nume='Celebration', artist=Artist{nume='Logic', genMuzical='Hip-Hop', idArtist=1}, durata=120, idMelodie=1}]
+No pressure,Artist{nume='Logic', genMuzical='Hip-Hop', idArtist=1},1,[Melodie{nume='Celebration', idArtist=1, durata=120, idMelodie=1}]
